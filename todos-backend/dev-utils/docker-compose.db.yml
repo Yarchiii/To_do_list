@@ -1,0 +1,11 @@
+services:
+  database:
+    image: postgres:15-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: todos
+      POSTGRES_PASSWORD: todos
+      POSTGRES_DB: todos
+    volumes:
+      - ./db-data:/var/lib/postgresql/data

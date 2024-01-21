@@ -1,0 +1,9 @@
+services:
+  database:
+    image: postgres:15-alpine
+    ports:
+      - 5435:5432
+    environment:
+      POSTGRES_USER: todos_tests
+      POSTGRES_PASSWORD: todos_tests
+      POSTGRES_DB: todos_tests
